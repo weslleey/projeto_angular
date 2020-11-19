@@ -1,0 +1,230 @@
+@charset "utf-8";
+
+
+/* ===================== CORPO PÁGINA  ===================== */
+
+.site {
+    width: 100%;
+    height: 100vh;
+}
+
+
+/* ===================== MENU ===================== */
+
+.menu{
+    font-weight: bold;
+    font-size: 25px;
+    list-style: none;
+    display: inline-block;
+    padding:  18px;
+}
+
+.menu-site {
+    background-color:  #000000d5 !important;
+    width: 100%;
+    display: block;
+    height: 100px;
+    padding-left: 100px;
+}
+
+.logo {
+    position: relative;
+    float: left;
+    padding: 0 0 0 50px;
+    width: 250px;
+    height: 170px;
+    margin-left: 30px;
+    margin-top: 200px;
+}
+
+.icone {
+    margin-right: 5px;
+}
+
+.menu {
+    color: #e6a10c;
+}
+
+.menu:hover {
+    text-decoration: none; 
+    color: #949618;
+    color: #e6a10c;
+    background: #000000;
+    box-shadow: 0 0 0px #e6a10c, 0 0 20px #e6a10c, 0 0 20px #e6a10c;
+}
+
+.lista-menu {
+    text-align: center;
+}
+
+.navbar-toggler {
+    border-color: #fff;
+    background-color: rgb(48, 48, 48);
+}
+
+/* ===================== CONTEÚDO ===================== */
+
+.conteudo {
+    margin-right:150px;
+    height: 100%;
+}
+
+.foto {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.img-thumbnail {
+    background-color: #e6a10c !important;
+    box-shadow: 0px 0px 0px #e6a10c, 0 0 16px #e6a10c, 0 0 20px #e6a10c !important;
+    border: none !important;
+}
+
+.coluna-perfil {
+    padding: 0;
+
+}
+
+.barra-perfil {
+    padding-top: 20px;
+    height: 100vh;
+    background-color: #000000;
+    
+}
+
+.abre-perfil {
+    font-size: 30px;
+    cursor:  pointer;
+    color: #e6a10c;
+    left: 10%;
+    position: absolute;
+
+}
+
+.closebtn {
+    text-decoration: none; 
+    color: #e6a10c;
+    background: #000000;
+}
+
+.coluna-conteudo {
+    padding-left: 100px;
+}
+
+/* ===================== HOVER NEON =====================*/
+
+.lista {
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0;
+}
+
+.sociais{
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #e6a10c;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.sociais:hover
+{
+    color: #949618;
+    background: #e6a10c;
+    box-shadow: 0 0 0px #e6a10c, 0 0 20px #e6a10c, 0 0 25px #e6a10c;
+    transition-delay: 1s;
+}
+.sociais span
+{
+    position: absolute;
+    display: block;
+}
+.sociais span:nth-child(1)
+{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#e6a10c);
+}
+.sociais:hover span:nth-child(1)
+{
+    left: 100%;
+    transition: 1s;
+} 
+.sociais span:nth-child(2)
+{
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#e6a10c);
+}
+.sociais:hover span:nth-child(2)
+{
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+.sociais span:nth-child(3)
+{
+    top: -100℅;
+    right: 0%;
+  
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#e6a10c);
+}
+.sociais:hover span:nth-child(3)
+{
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+.sociais span:nth-child(4)
+{
+    bottom: -100℅;
+    left: 0%;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#e6a10c);
+}
+.sociais:hover span:nth-child(4)
+{
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+
+/* ================= SIDE BAR ===================== */
+
+.sidenav {
+    height: 100vh;
+    background-color: #000000;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+  
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+  
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+
