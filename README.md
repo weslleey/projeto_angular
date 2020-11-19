@@ -10,5 +10,6 @@ Nele podemos  encontrar:
 - Funções;
 - Bootstrap;
 - Jquery;
-- TypeScript;
+- TypeScript.
+
 Utilizando Rotas, Modulos e Componentes.
